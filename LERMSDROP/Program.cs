@@ -35,7 +35,7 @@ public class Watcher
                                  | NotifyFilters.Security
                                  | NotifyFilters.Size;
 
-            watcher.IncludeSubdirectories = false;
+            watcher.IncludeSubdirectories = true;
             watcher.Filter = "*.xml";
 
             watcher.Created += OnCreated;
